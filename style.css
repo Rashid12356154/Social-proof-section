@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Spartan;
+    src: url(https://fonts.google.com/specimen/League+Spartan);
+}
+body{
+    font-family: Spartan,sans-serif;
+    font-size:15px;
+
+}
+main{
+    width: 100%;
+
+    background-image: url(images/bg-pattern-top-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.left-column{
+    display: flex;
+    flex-direction: column;
+}
+.left-column .left-article h1{
+   color: hsl(300, 43%, 22%);
+   font-size: 3rem;
+   margin-bottom:15px;
+   text-align: center;
+}
+.left-column .left-article p{
+    color: hsl(303, 10%, 53%);
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 15px 0px;
+}
+.left-column .right-article .rated{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 15px;
+    padding: 10px 0px;
+    border-radius: 10px;
+   
+}
+.left-column .right-article .rated .images img{
+    margin-left: 5px;
+    
+}
+.left-column .right-article .rated p{
+    padding: 10px 0px;
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+}
+.right-column {
+    padding: 20px 0px;
+   display: flex;
+   flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0px auto;
+}
+.right-column .column{
+   
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 25px;
+}
+.right-column .column .user{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+}
+.right-column .column .user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.right-column .column .user >div h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.right-column .column .user >div p{
+    color: hsl(333, 80%, 67%);
+    font-weight: bold;
+    width: 100%;
+
+}
+.right-column .column p{
+    color:hsla(0, 0%, 100%, 0.87);
+    line-height: 25px;
+    font-size: 17px;
+    width: 85%;
+}
+
+@media (min-width:768px){
+    main{
+       background-image: url(images/bg-pattern-bottom-desktop.svg);
+       width: 100%;
+       height: 100%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    .container{
+        width: 90%;
+        margin: 0px auto;
+    }
+    .left-column{
+        flex-direction: row;
+        padding: 40px 0px;
+    }
+    .left-column .left-article{
+        flex: 1;
+    }
+    .left-column .left-article h1{
+        font-size: 3rem;
+        width: 60%;
+        text-align: left;
+    }
+    .left-column .left-article p{
+        width: 80%;
+        text-align: left;
+    }
+    .left-column .right-article{
+        flex: 1;
+        
+    }
+    .left-column .right-article .rated{
+        width: 70%;
+    }
+    .left-column .right-article .left-40{
+        margin-left: 40px;
+    }
+    .left-column .right-article .left-80{
+        margin-left: 80px;
+    }
+    .right-column{
+        padding: 0px;
+    }
+    .right-column  .column{
+        width: 350px;
+        height: 300px;
+    }
+    .right-column .top-20{
+        margin-top: 20px ;
+    }
+    .right-column .top-40{
+        margin-top: 40px ;
+    }
+}
